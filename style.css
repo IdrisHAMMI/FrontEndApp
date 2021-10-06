@@ -1,0 +1,42 @@
+body {
+  background-color: #47555e;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_logo {
+  width: 175px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav {
+  background: #13abf185;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: 50%;
+}
+
+
+ul {
+  text-align: center;
+  word-spacing: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
