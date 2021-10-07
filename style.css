@@ -1,5 +1,9 @@
-body {
+.index_color {
   background-color: #47555e;
+}
+
+h1 {
+  text-align: center;
 }
 
 .logo {
@@ -8,10 +12,23 @@ body {
   margin-right: auto;
 }
 
+div {
+  display: flex;
+  justify-content: center;
+}
+
 .header_logo {
   width: 175px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.gallery .images {
+  width: calc(100% / 4);
+}
+
+.gallery .images img {
+  width: 100%;
 }
 
 nav {
