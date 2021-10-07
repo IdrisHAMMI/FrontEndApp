@@ -23,14 +23,21 @@ div {
   margin-right: 50px;
 }
 
-.gallery .images {
+.gallery .image {
   width: calc(100% / 4);
 }
 
-.gallery .images img {
+.gallery .image img {
   width: 100%;
 }
 
+.gallery .image.hide {
+  display: none;
+}
+
+.gallery .image.show {
+  display: block;
+}
 nav {
   background: #13abf185;
   border-radius: 50px;
