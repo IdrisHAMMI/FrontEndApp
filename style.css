@@ -23,7 +23,14 @@ div {
   margin-right: 50px;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
 .gallery .image {
+  padding: 7px;
   width: calc(100% / 4);
 }
 
