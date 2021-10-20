@@ -22,8 +22,12 @@ div {
   margin-right: auto;
   margin-top: 50px;
   width: 1300px;
-  height: 600px;
+  height: 500px;
   text-align: center;
+}
+
+.cont_photo {
+  object-fit: fill;
 }
 
 .theme_img {
@@ -32,7 +36,13 @@ div {
   margin-bottom: 20px;
 }
 
-.cont_desc_left {
+.theme_img_couple {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.cont_desc {
   width: 374px;
   height: 450px;
   margin: 3.5rem;
@@ -40,13 +50,6 @@ div {
   z-index: 1;
 }
 
-.cont_desc_right {
-  width: 374px;
-  height: 450px;
-  margin: 3.5rem;
-  background-color: white;
-  z-index: 1;
-}
 
 .header_logo {
   width: 175px;
