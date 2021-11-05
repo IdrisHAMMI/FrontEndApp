@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .index_color {
   background-color: #47555e;
 }
@@ -50,6 +56,33 @@ div {
   z-index: 1;
 }
 
+.form-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+  font-size: 14px; 
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  background-color: rgb(176, 176, 255);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section-content {
+  text-align: center;
+}
 
 .header_logo {
   width: 175px;
