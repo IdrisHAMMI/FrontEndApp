@@ -6,24 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="style.css"> 
   <title>Portfolio</title>
 </head>
 <body>
 <!--NAV BAR START-->
-<nav>
-  <ul class="menu-nav" style="padding-left: 0px;">
-    <li><a href="index.html" class="active_left">Acceuil</a></li>
-    <li><a href="gallery.html" class="active_left">Galerie</a></li>
-    <li><img src="assets/index_header.png" alt="header" class="header_logo"></li>
-    <li><a href="expences.html" class="active_right">Tarifs&prestations</a></li>
-    <li><a href="contact.html" class="active_right">Contact</a></li>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img src="assets/index_header.png" class="index_header">
+  <div class="collapse navbar-collapse">
+  <ul class="navbar-nav ml-auto" style="padding-left: 0px;">
+    <li class="nav-item active"><a href="index.html" class="nav-link">Acceuil</a></li>
+    <li class="nav-item active"><a href="gallery.html" class="nav-link">Galerie</a></li>
+    <li class="nav-item active"><a href="expences.html" class="nav-link">Tarifs&prestations</a></li>
+    <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
   </ul>
+  </div>
 </nav>
 <!--NAV BAR END-->
 <br>
 <h1>Galerie</h1>
 <br>
+
 <!--FILTER BUTTON/ DATA TYPE START-->
 <div class="items">
   <button class="item active"data-name="all">Toutes les Images</button>
@@ -36,26 +42,126 @@
 </div>
 <!--FILTER BUTTON/ DATA TYPE END-->
 
+
 <!--FILTER PICTURES START-->
+
 <div class="gallery">
-  <div class="image" data-name="marriage"><span><img src="assets/gallery/marriage/marriage_1.jpg" alt=""></span></div>
-  <div class="image" data-name="marriage"><span><img src="assets/gallery/marriage/marriage_2.jpg" alt=""></span></div>
-  <div class="image" data-name="marriage"><span><img src="assets/gallery/marriage/marriage_3.jpg" alt=""></span></div>
-  <div class="image" data-name="pregnancy"><span><img src="assets/gallery/pregnancy/preg_1.png" alt=""></span></div>
-  <div class="image" data-name="pregnancy"><span><img src="assets/gallery/pregnancy/preg_2.jpg" alt=""></span></div>
-  <div class="image" data-name="pregnancy"><span><img src="assets/gallery/pregnancy/preg_3.png" alt=""></span></div>
-  <div class="image" data-name="baby"><span><img src="assets/gallery/baby/baby_1.jpg" alt=""></span></div>
-  <div class="image" data-name="baby"><span><img src="assets/gallery/baby/baby_2.png" alt=""></span></div>
-  <div class="image" data-name="baby"><span><img src="assets/gallery/baby/baby_3.jpg" alt=""></span></div>
-  <div class="image" data-name="family"><span><img src="assets/gallery/family/family_1.jpg" alt=""></span></div>
-  <div class="image" data-name="family"><span><img src="assets/gallery/family/family_2.jpg" alt=""></span></div>
-  <div class="image" data-name="family"><span><img src="assets/gallery/family/family_3.jpg" alt=""></span></div>
-  <div class="image" data-name="baptism"><span><img src="assets/gallery/baptism/baptism_1.jpg" alt=""></span></div>
-  <div class="image" data-name="baptism"><span><img src="assets/gallery/baptism/baptism_2.jpg" alt=""></span></div>
-  <div class="image" data-name="couple"><span><img src="assets/gallery/couple/couple_1.jpg" alt=""></span></div>
-  <div class="image" data-name="couple"><span><img src="assets/gallery/couple/couple_2.jpg" alt=""></span></div>
-  <div class="image" data-name="couple"><span><img src="assets/gallery/couple/couple_3.jpg" alt=""></span></div>
+  
+  <div class="row mt-4">
+  
+  <!--MARRIAGE START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="marriage">
+    <a href="assets/gallery/marriage/marriage_1.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/marriage/marriage_1.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="marriage">
+    <a href="assets/gallery/marriage/marriage_2.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/marriage/marriage_2.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="marriage">
+    <a href="assets/gallery/marriage/marriage_3.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/marriage/marriage_3.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  <!--MARRIAGE END-->
+
+  <!--PREGNANCY START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="pregnancy">
+    <a href="assets/gallery/pregnancy/preg_1.png" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/pregnancy/preg_1.png" width="100%" height="100%">
+    </a>
+  </div>
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="pregnancy">
+    <a href="assets/gallery/pregnancy/preg_2.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/pregnancy/preg_2.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="pregnancy">
+    <a href="assets/gallery/pregnancy/preg_3.png" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/pregnancy/preg_3.png" width="100%" height="100%">
+    </a>
+  </div>
+  <!--PREGNANCY END-->
+  
+  <!--BABY START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="baby">
+    <a href="assets/gallery/baby/baby_1.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/baby/baby_1.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="baby">
+    <a href="assets/gallery/baby/baby_3.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/baby/baby_3.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  <!--BABY END-->
+
+  <!--FAMILLY START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="family">
+    <a href="assets/gallery/family/family_1.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/family/family_1.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="family">
+    <a href="assets/gallery/family/family_2.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/family/family_2.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="family">
+    <a href="assets/gallery/family/family_3.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/family/family_3.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  <!--FAMILLY END-->
+
+  <!--BAPTISM START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="baptism">
+    <a href="assets/gallery/baptism/baptism_1.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/baptism/baptism_1.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="baptism">
+    <a href="assets/gallery/baptism/baptism_2.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/baptism/baptism_2.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  <!--BAPTISM END-->
+
+  <!--COUPLE START-->
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="couple">
+    <a href="assets/gallery/couple/couple_1.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/couple/couple_1.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="couple">
+    <a href="assets/gallery/couple/couple_2.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/couple/couple_2.jpg" width="100%" height="100%">
+    </a>
+  </div>
+
+  <div class="image col-sm-6 col-md-4 mb-3" data-name="couple">
+    <a href="assets/gallery/couple/couple_3.jpg" class="fancybox" data-fancybox="gallery1">
+      <img src="assets/gallery/couple/couple_3.jpg" width="100%" height="100%">
+    </a>
+  </div>
+  <!--COUPLE END-->
+
+  </div>
 </div>
+
+
 
 <!--FILTER PICTURES END-->
 
