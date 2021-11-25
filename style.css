@@ -11,6 +11,7 @@ h1 {
 
 body {
   background: url(assets/index.png) fixed center;
+  font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
 }
 
 #index_title {
@@ -41,7 +42,7 @@ body {
 }
 
 .items {
-  display: flex;
+  text-align: center;
 }
 
 div {
@@ -67,6 +68,7 @@ div {
 
 .cont_photo {
   object-fit: cover;
+  width: 100%;
 }
 
 .theme_img {
@@ -196,7 +198,7 @@ ul {
     width: 100px;
   }
   .theme_img_couple {
-    width: 50px;
+    width: 70px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -214,5 +216,49 @@ ul {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+ 
+  .container_theme {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+  }
+  .theme_img {
+    width: 100px;
+  }
+  .theme_img_couple {
+    width: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #media_header {
+    font-size: .5rem;
+  }
+
+  .cont_desc {
+    width: 354px;
+    margin: 2.5rem;
+  }
+  
+  .cont_photo {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #index_title {
+    font-size: 60px;
+  }
+
+  .item {
+    font-size: 1.0rem;
   }
 }
